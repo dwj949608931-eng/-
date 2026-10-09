@@ -1,0 +1,189 @@
+/* iceland-extra.css — 冰岛版补充样式 */
+
+/* ---- 实时状态卡 ---- */
+.iceland-status-section {
+  background: linear-gradient(180deg, #0e2233 0%, #12324a 100%);
+  border-radius: 20px;
+  margin: 16px 0 28px;
+  padding: 22px 18px 16px;
+  color: #eaf3fb;
+}
+.iceland-status-section .section-heading { margin-bottom: 14px; }
+.iceland-status-section .section-kicker { color: #7fd0ff; }
+.iceland-status-section h2 { color: #ffffff; }
+.iceland-status-section .soft-label { color: #9fc4dd; }
+
+.status-link-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.status-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 12px 12px 10px;
+  text-decoration: none;
+  color: #eaf3fb;
+}
+.status-link strong { font-size: 14px; }
+.status-link span { font-size: 11px; color: #9fc4dd; line-height: 1.4; }
+.status-link:active { background: rgba(255, 255, 255, 0.16); }
+
+.status-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.status-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 14px 12px;
+}
+.status-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.status-card__head strong { font-size: 14px; color: #ffffff; }
+.status-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.status-badge--safe { background: #1f7a4d; color: #d8ffe9; }
+.status-badge--ok { background: #b47b1e; color: #fff3d0; }
+.status-badge--warn { background: #a34b2c; color: #ffe3d6; }
+.status-badge--good { background: #2c6fb0; color: #dff0ff; }
+.status-card p { font-size: 12px; line-height: 1.55; color: #d7e8f5; margin: 0 0 8px; }
+.status-card__future {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #9fc4dd;
+  border-top: 1px dashed rgba(255, 255, 255, 0.16);
+  padding-top: 8px;
+}
+.status-card__future strong { color: #cfe6f7; font-weight: 600; }
+.status-card__link { font-size: 11px; color: #7fd0ff; text-decoration: none; }
+
+@media (max-width: 640px) {
+  .status-link-row, .status-card-grid { grid-template-columns: 1fr; }
+}
+
+/* ---- 路线浏览器 ---- */
+.route-day-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 2px 10px;
+  scrollbar-width: none;
+}
+.route-day-tabs::-webkit-scrollbar { display: none; }
+.route-day-tab {
+  flex: 0 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #43505e;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.route-day-tab.is-active {
+  background: #0f3b5e;
+  border-color: #0f3b5e;
+  color: #ffffff;
+}
+.real-map-shell {
+  width: 100%;
+  height: 440px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #dfe8ee;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 640px) { .real-map-shell { height: 360px; } }
+
+/* Leaflet 图钉 */
+.real-map-pin-wrap { background: transparent; border: none; }
+.real-map-pin {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: var(--pin, #1f7ae0);
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 22px;
+}
+.real-map-pin--numbered { transform: rotate(-45deg); }
+.real-map-pin--numbered::before { content: attr(data-label); }
+
+/* Leaflet popup 定制 */
+.real-map-popup strong { display: block; font-size: 14px; color: #0f3b5e; }
+.real-map-popup em { display: block; font-size: 11px; color: #6b7a89; margin-bottom: 4px; }
+.real-map-popup p { margin: 4px 0 6px; font-size: 12px; color: #43505e; line-height: 1.45; }
+.real-map-popup a { display: inline-block; font-size: 12px; color: #1f7ae0; text-decoration: none; font-weight: 600; }
+
+/* 地点弹窗内地图 */
+.place-map-frame { width: 100%; height: 62vh; min-height: 320px; background: #dfe8ee; }
+
+/* ---- 打包清单 4 人标签页 ---- */
+.todo-person-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 12px;
+  flex-wrap: wrap;
+}
+.todo-person-tab {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #43505e;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.todo-person-tab.is-active {
+  background: #12324a;
+  border-color: #12324a;
+  color: #ffffff;
+}
+.todo-person-tab .todo-person-count { opacity: 0.7; margin-left: 4px; font-weight: 400; }
+.todo-list-item[data-self] { display: none; }
+.todo-list-item[data-self="true"] { display: flex; }
+
+/* 金额样式 */
+.ledger-budget-line { font-weight: 700; }
+
+/* 记账预算卡 */
+.ledger-budget { margin-bottom: 18px; }
+.ledger-budget-card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 18px; }
+.ledger-budget__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.ledger-budget__head h3 { margin: 0; font-size: 15px; color: #fff; }
+.ledger-budget__currency { font-size: 11px; color: #9fc4dd; }
+.ledger-budget__numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+.ledger-budget__stat { background: rgba(0,0,0,.18); border-radius: 10px; padding: 10px 12px; }
+.ledger-budget__stat span { display: block; font-size: 11px; color: #9fc4dd; margin-bottom: 4px; }
+.ledger-budget__stat strong { font-size: 20px; color: #fff; }
+.ledger-budget__stat.is-remain strong { color: #7fe08a; }
+.ledger-budget__hint { font-size: 11px; color: #b9d4e8; margin: 0 0 10px; }
+.ledger-budget__table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.ledger-budget__table th, .ledger-budget__table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,.08); color: #e6f2fb; }
+.ledger-budget__table th { color: #9fc4dd; font-weight: 600; }
+.ledger-budget-num { text-align: right; font-variant-numeric: tabular-nums; }

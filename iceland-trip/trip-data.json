@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "tripId": "iceland-feb-2026",
+    "title": "冰岛冬游记",
+    "generatedAt": "2026-10-08",
+    "schemaVersion": "2.0-lite",
+    "timeZone": "Atlantic/Reykjavik"
+  },
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": true,
+      "ledger": true
+    },
+    "persistence": { "mode": "local" }
+  },
+  "trip": {
+    "status": "generated",
+    "title": "冰岛冬游记",
+    "heroTitle": "冰岛冬游记",
+    "heroEyebrow": "ICELAND · FEB 2026",
+    "subtitle": "4 人自驾 · 每人预算 ¥30,000",
+    "startDate": "2026-01-28",
+    "endDate": "2026-02-08",
+    "dayCount": 12,
+    "countries": [
+      { "code": "IS", "name": "冰岛", "nameZh": "冰岛", "nameEn": "Iceland" }
+    ],
+    "primaryDestinationCountries": ["IS"],
+    "primaryDestinationName": "冰岛",
+    "primaryDestinationNameEn": "Iceland",
+    "citiesAndAreas": ["雷克雅未克", "黄金圈", "维克", "霍芬", "斯奈山"]
+  },
+  "flightJourneys": [
+    { "id": "out", "title": "上海 → 雷克雅未克（KEF）" }
+  ],
+  "flights": [
+    {
+      "journeyId": "out",
+      "sequence": 1,
+      "flightNumber": "待出票",
+      "airline": { "name": "TBD", "nameZh": "航班待出票" },
+      "departure": { "airportCode": "PVG", "city": "上海浦东", "date": "2026-01-28", "time": "00:15", "utcOffset": "+08:00" },
+      "arrival": { "airportCode": "HEL", "city": "赫尔辛基", "date": "2026-01-28", "time": "06:30", "utcOffset": "+02:00" }
+    },
+    {
+      "journeyId": "out",
+      "sequence": 2,
+      "flightNumber": "待出票",
+      "airline": { "name": "TBD", "nameZh": "航班待出票" },
+      "departure": { "airportCode": "HEL", "city": "赫尔辛基", "date": "2026-01-28", "time": "09:00", "utcOffset": "+02:00" },
+      "arrival": { "airportCode": "KEF", "city": "凯夫拉维克", "date": "2026-01-28", "time": "15:40", "utcOffset": "+00:00" }
+    }
+  ],
+  "groundTransport": {
+    "rentalChecklist": [
+      "检查车身有无剐蹭划痕并拍照留证",
+      "确认油箱满油、轮胎与雪地胎状况",
+      "核对里程表与保险单据",
+      "还车前加满油，保留小票",
+      "按约定时间提前 2 小时到机场还车"
+    ],
+    "rentalCar": {
+      "company": "机场租车柜台（示例）",
+      "pickup": { "date": "2026-01-28", "time": "16:00", "utcOffset": "+00:00" },
+      "dropoff": {
+        "date": "2026-02-08",
+        "time": "08:00",
+        "utcOffset": "+00:00",
+        "timeZoneLabel": "冰岛时间",
+        "vehicleReturnPoint": "凯夫拉维克机场还车点",
+        "deadlineWarning": "请提前加满油并归还车辆",
+        "recommendedArrivalTime": "提前 2 小时"
+      },
+      "vehicle": { "name": "四驱 SUV（示例）", "transmission": "自动挡", "seats": 5 },
+      "price": { "amount": "约 ¥4,496", "unit": "含全险（示例）" },
+      "notes": ["冰岛冬季务必四驱+雪地胎", "取车时检查轮胎与油箱", "加油用 N1 等连锁站"]
+    }
+  },
+  "days": [
+    {
+      "day": 1,
+      "id": "d1",
+      "date": "2026-01-28",
+      "title": "抵达 · 取车采购",
+      "locations": ["凯夫拉维克", "雷克雅未克"],
+      "schedule": [
+        { "time": "15:40", "text": "抵达凯夫拉维克国际机场（KEF），过海关取行李", "placeIds": ["kef_airport"] },
+        { "time": "16:00", "text": "机场取车，检查车况、轮胎与油量", "placeIds": ["kef_airport"] },
+        { "time": "16:30", "text": "Costco 冰岛店采购饮用水、零食与物资", "placeIds": ["costco"] },
+        { "time": "18:00", "text": "入住雷克雅未克酒店，周边熟悉环境", "placeIds": ["bonus_laugavegur"] },
+        { "time": "20:00", "text": "晚餐，早点休息倒时差" }
+      ],
+      "notes": ["冬季冰岛白天很短，抵达后尽早采购", "Costco 买大桶水很划算"]
+    },
+    {
+      "day": 2,
+      "id": "d2",
+      "date": "2026-01-29",
+      "title": "雷克雅未克城市漫步",
+      "locations": ["雷克雅未克"],
+      "schedule": [
+        { "time": "09:30", "text": "哈尔格里姆教堂登顶，俯瞰全城", "placeIds": ["hallgrimskirkja"] },
+        { "time": "11:00", "text": "特约宁湖边散步喂鸭子", "placeIds": ["tjornin"] },
+        { "time": "12:30", "text": "旧港区午餐，看看渔船与雪山", "placeIds": ["old_harbour"] },
+        { "time": "14:30", "text": "珍珠楼观景台看城市全景", "placeIds": ["perlan"] },
+        { "time": "16:00", "text": "Bónus 超市补货，准备明天黄金圈干粮", "placeIds": ["bonus_laugavegur"] },
+        { "time": "18:00", "text": "晚餐，尝试冰岛羊肉汤" }
+      ],
+      "notes": ["市中心步行可达，无需开车"]
+    },
+    {
+      "day": 3,
+      "id": "d3",
+      "date": "2026-01-30",
+      "title": "黄金圈经典一日",
+      "locations": ["辛格维利尔", "间歇泉", "黄金瀑布", "塞尔福斯"],
+      "schedule": [
+        { "time": "08:30", "text": "出发前往黄金圈", "placeIds": ["bonus_laugavegur"] },
+        { "time": "09:30", "text": "辛格维利尔国家公园，看北美欧亚板块裂缝", "placeIds": ["thingvellir"] },
+        { "time": "11:00", "text": "布鲁阿福斯瀑布（蓝绿色小瀑布）", "placeIds": ["bruarfoss"] },
+        { "time": "12:00", "text": "史托克间歇泉看喷发", "placeIds": ["strokkur"] },
+        { "time": "12:30", "text": "黄金瀑布观景台", "placeIds": ["gullfoss"] },
+        { "time": "14:00", "text": "弗里德海默番茄农场温室午餐", "placeIds": ["fridheimar"] },
+        { "time": "15:30", "text": "Bónus 塞尔福斯店采购", "placeIds": ["bonus_selfoss"] },
+        { "time": "17:30", "text": "返回雷克雅未克" }
+      ],
+      "notes": ["间歇泉注意站在护栏外", "瀑布观景台风大路滑，注意防滑"]
+    },
+    {
+      "day": 4,
+      "id": "d4",
+      "date": "2026-01-31",
+      "title": "休整日",
+      "locations": ["雷克雅未克"],
+      "schedule": [
+        { "time": "10:00", "text": "睡到自然醒，雷市闲逛补货" },
+        { "time": "14:00", "text": "检查车辆与明天行程，早点休息" }
+      ],
+      "notes": ["为明天南岸长途养精蓄锐"]
+    },
+    {
+      "day": 5,
+      "id": "d5",
+      "date": "2026-02-01",
+      "title": "南岸瀑布之旅 → 维克",
+      "locations": ["雷克雅未克", "塞里雅兰", "斯科加", "维克"],
+      "schedule": [
+        { "time": "09:00", "text": "出发沿一号公路南下", "placeIds": ["bonus_laugavegur"] },
+        { "time": "10:00", "text": "塞里雅兰瀑布，可绕到水帘后面", "placeIds": ["seljalandsfoss"] },
+        { "time": "11:00", "text": "斯科加瀑布登台阶看全景", "placeIds": ["skogafoss"] },
+        { "time": "12:30", "text": "索尔黑马冰川远眺（不徒步）", "placeIds": ["solheimajokull"] },
+        { "time": "14:00", "text": "迪霍拉里海岬看火山岩拱门", "placeIds": ["dyrholaey"] },
+        { "time": "15:00", "text": "雷尼斯黑沙滩看玄武岩柱（注意巨浪！）", "placeIds": ["reynisfjara"] },
+        { "time": "16:30", "text": "维克教堂山坡看小镇全景", "placeIds": ["vikurkirkja"] },
+        { "time": "17:30", "text": "入住维克住宿" }
+      ],
+      "notes": ["黑沙滩浪涌危险，切勿靠近海水", "冬季日落早，瀑布尽量上午看"]
+    },
+    {
+      "day": 6,
+      "id": "d6",
+      "date": "2026-02-02",
+      "title": "东线冰川 → 霍芬",
+      "locations": ["维克", "羽毛峡谷", "杰古沙龙", "霍芬"],
+      "schedule": [
+        { "time": "09:00", "text": "出发前往东部", "placeIds": ["vikurkirkja"] },
+        { "time": "10:00", "text": "羽毛峡谷观景台（冬季部分栈道可能关闭）", "placeIds": ["fjadrargljufur"] },
+        { "time": "11:30", "text": "埃尔德熔岩原，苔原熔岩地貌", "placeIds": ["eldhraun"] },
+        { "time": "13:00", "text": "杰古沙龙冰河湖看浮冰", "placeIds": ["jokulsarlon"] },
+        { "time": "15:00", "text": "斯托克斯角黑沙滩看冰岛东部海岸", "placeIds": ["stokksnes"] },
+        { "time": "16:30", "text": "Bónus 霍芬店采购龙虾晚餐食材", "placeIds": ["bonus_hofn"] },
+        { "time": "17:30", "text": "入住霍芬，晚餐吃龙虾汤" }
+      ],
+      "notes": ["冰河湖风极大，注意保暖", "冬季东部公路注意冰雪路面"]
+    },
+    {
+      "day": 7,
+      "id": "d7",
+      "date": "2026-02-03",
+      "title": "蓝冰洞 → 返回雷市",
+      "locations": ["霍芬", "杰古沙龙", "雷克雅未克"],
+      "schedule": [
+        { "time": "09:00", "text": "蓝冰洞徒步（提前预约的团，集合点杰古沙龙）", "placeIds": ["jokulsarlon"], "ticketIds": ["t-blueice"] },
+        { "time": "12:00", "text": "出发返回雷克雅未克（约 5 小时车程）", "placeIds": ["bonus_hofn"] },
+        { "time": "18:00", "text": "抵雷市，入住休息" }
+      ],
+      "notes": ["蓝冰洞受天气影响可能临时取消，听从向导安排"]
+    },
+    {
+      "day": 8,
+      "id": "d8",
+      "date": "2026-02-04",
+      "title": "雷克雅未克自由活动",
+      "locations": ["雷克雅未克"],
+      "schedule": [
+        { "time": "10:00", "text": "博物馆或市区闲逛" },
+        { "time": "15:00", "text": "自由活动，追极光预备（查今晚指数）" },
+        { "time": "19:00", "text": "若天气晴朗去郊外观测极光" }
+      ],
+      "notes": ["极光预报见网页顶部实时状态卡片"]
+    },
+    {
+      "day": 9,
+      "id": "d9",
+      "date": "2026-02-05",
+      "title": "斯奈山半岛一日",
+      "locations": ["雷克雅未克", "斯奈山", "博尔加内斯"],
+      "schedule": [
+        { "time": "08:30", "text": "出发前往斯奈山半岛", "placeIds": ["bonus_laugavegur"] },
+        { "time": "10:00", "text": "布迪尔黑教堂", "placeIds": ["budakirkja"] },
+        { "time": "11:00", "text": "阿尔纳斯塔皮渔村海岸栈道", "placeIds": ["arnarstapi"] },
+        { "time": "12:00", "text": "迪帕隆黑沙滩举石（力量测试）", "placeIds": ["djupalonssandur"] },
+        { "time": "13:30", "text": "英格亚尔德斯教堂（红色小教堂）", "placeIds": ["ingjaldsholskirkja"] },
+        { "time": "14:30", "text": "教会山（草帽山）瀑布经典机位", "placeIds": ["kirkjufellsfoss"] },
+        { "time": "16:00", "text": "斯蒂基斯霍尔米小镇港口", "placeIds": ["stykkisholmur"] },
+        { "time": "18:00", "text": "Bónus 博尔加内斯店补给", "placeIds": ["bonus_borgarnes"] },
+        { "time": "19:30", "text": "返回雷克雅未克" }
+      ],
+      "notes": ["草帽山日落机位要提前占位", "冬季半岛风大，沿海岸注意安全"]
+    },
+    {
+      "day": 10,
+      "id": "d10",
+      "date": "2026-02-06",
+      "title": "Sky Lagoon 温泉日",
+      "locations": ["雷克雅未克"],
+      "schedule": [
+        { "time": "13:00", "text": "Sky Lagoon 无边温泉，看海景泡汤", "placeIds": ["sky_lagoon"], "ticketIds": ["t-sky"] },
+        { "time": "17:00", "text": "晚餐，市区夜生活" }
+      ],
+      "notes": ["温泉建议提前线上购票选时段"]
+    },
+    {
+      "day": 11,
+      "id": "d11",
+      "date": "2026-02-07",
+      "title": "观鲸 · 还车准备",
+      "locations": ["雷克雅未克"],
+      "schedule": [
+        { "time": "10:00", "text": "Elding 观鲸船出发（约 3 小时）", "placeIds": ["elding"], "ticketIds": ["t-whale"] },
+        { "time": "14:00", "text": "N1 加油站加油，检查车辆准备明天还车", "placeIds": ["n1_hringbraut"] },
+        { "time": "18:00", "text": "整理行李，结算账目" }
+      ],
+      "notes": ["观鲸船颠簸，晕船药提前吃"]
+    },
+    {
+      "day": 12,
+      "id": "d12",
+      "date": "2026-02-08",
+      "title": "返程",
+      "locations": ["雷克雅未克", "凯夫拉维克"],
+      "schedule": [
+        { "time": "08:00", "text": "机场还车，办理值机", "placeIds": ["kef_airport"] },
+        { "time": "10:30", "text": "航班离境，返回国内" }
+      ],
+      "notes": ["提前 2 小时到机场，还车后留足值机时间"]
+    }
+  ],
+  "ticketPlanning": {
+    "items": [
+      { "id": "t-blueice", "day": 7, "name": "蓝冰洞徒步", "requirement": "advance-required", "guidance": ["需提前预约", "集合点：杰古沙龙冰河湖停车场"], "scheduleMatchTerms": ["蓝冰洞"] },
+      { "id": "t-sky", "day": 10, "name": "Sky Lagoon 温泉", "requirement": "advance-recommended", "guidance": ["建议提前购票选时段"], "scheduleMatchTerms": ["Sky Lagoon", "温泉"] },
+      { "id": "t-whale", "day": 11, "name": "Elding 观鲸", "requirement": "advance-recommended", "guidance": ["观鲸约 3 小时", "注意防风保暖", "晕船药提前吃"], "scheduleMatchTerms": ["观鲸", "Elding"] }
+    ]
+  },
+  "preTrip": {
+    "todoItems": [
+      { "id": "pk-passport", "text": "护照 + 复印件（有效期 6 个月以上）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-visa", "text": "申根签证确认（停留期覆盖行程）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-driver", "text": "驾照原件 + 国际驾照认证件/翻译件", "persons": ["卤蛋", "派大宝"] },
+      { "id": "pk-insurance", "text": "旅行保险单（含医疗与救援）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-flight", "text": "机票行程单打印/电子版", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-hotel", "text": "住宿订单确认单", "persons": ["卤蛋", "派大宝"] },
+      { "id": "pk-cash", "text": "现金：少量欧元/冰岛克朗 + Visa/Master 卡", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-thermal", "text": "保暖内衣 + 抓绒 + 冲锋衣（防风防水）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-snowpants", "text": "滑雪裤/防风裤", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-gloves", "text": "防水手套 + 毛线帽 + 围巾", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-shoes", "text": "防水防滑徒步鞋 + 冰爪", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-socks", "text": "羊毛袜（多备几双）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-swim", "text": "泳衣泳裤（温泉用）+ 速干毛巾", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-makeup", "text": "护肤品（保湿+防晒）+ 化妆包", "persons": ["嘿嘿", "非洲的屎"] },
+      { "id": "pk-sanitary", "text": "卫生巾/卫生棉条等私人物品", "persons": ["嘿嘿", "非洲的屎"] },
+      { "id": "pk-hair", "text": "吹风机/卷发棒（如需）", "persons": ["嘿嘿", "非洲的屎"] },
+      { "id": "pk-tooth", "text": "牙刷牙膏 + 洗漱用品分装", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-towel", "text": "便携毛巾 + 拖鞋", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-med-basic", "text": "常用药：感冒/肠胃/止疼药", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-med-seasick", "text": "晕车晕船药（观鲸用）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-plaster", "text": "创可贴 + 消毒湿巾", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-charger", "text": "充电器 + 充电宝（2万毫安内登机）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-adapter", "text": "欧标转换插头 + 插线板", "persons": ["卤蛋", "派大宝"] },
+      { "id": "pk-camera", "text": "相机/手机 + 备用电池与存储卡", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-aurora-app", "text": "极光预报 App（如 Aurora Forecast / vedur.is）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-aurora-tripod", "text": "三脚架 + 手电筒（拍极光用）", "persons": ["卤蛋", "派大宝"] },
+      { "id": "pk-snack", "text": "路上零食 + 保温杯 + 热水壶", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-tissue", "text": "纸巾/湿巾 + 垃圾袋（车上用）", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] },
+      { "id": "pk-nav", "text": "离线地图下载（Google Maps 离线/离线导航）", "persons": ["卤蛋", "派大宝"] },
+      { "id": "pk-phone-card", "text": "境外流量卡/国际漫游开通", "persons": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"] }
+    ]
+  },
+  "ledger": {
+    "budget": {
+      "perPerson": 30000,
+      "members": ["卤蛋", "派大宝", "嘿嘿", "非洲的屎"],
+      "items": [
+        { "id": "flight", "label": "机票（含税往返）", "amount": 7728, "paid": true },
+        { "id": "rental", "label": "租车（全程分摊）", "amount": 4496, "paid": true },
+        { "id": "fuel", "label": "油费 + 停车", "amount": 1500, "paid": false },
+        { "id": "lodging", "label": "住宿 11 晚", "amount": 6000, "paid": false },
+        { "id": "perlan", "label": "珍珠楼观景台", "amount": 263, "paid": false },
+        { "id": "tomato", "label": "番茄餐厅午餐", "amount": 250, "paid": false },
+        { "id": "stokksnes", "label": "斯托克斯角", "amount": 53, "paid": false },
+        { "id": "icecave", "label": "蓝冰洞", "amount": 1316, "paid": false },
+        { "id": "skylagoon", "label": "Sky Lagoon", "amount": 605, "paid": false },
+        { "id": "whale", "label": "观鲸 Elding", "amount": 776, "paid": false }
+      ]
+    }
+  },
+  "places": [    { "id": "kef_airport", "name": "Keflavík International Airport", "nameZh": "凯夫拉维克国际机场", "cityOrArea": "凯夫拉维克", "geo": { "lat": 63.9850, "lng": -22.6246 }, "navigation": { "query": "Keflavík International Airport, Iceland" }, "note": "抵达取车" },
+    { "id": "costco", "name": "Costco Wholesale Iceland", "nameZh": "开市客（冰岛店）", "cityOrArea": "加尔达拜尔（Garðabær）", "geo": { "lat": 64.0742, "lng": -21.9120 }, "navigation": { "query": "Costco Wholesale Iceland, Kauptún 3, Garðabær" }, "note": "DAY1 采购" },
+    { "id": "bonus_laugavegur", "name": "Bónus Laugavegur", "nameZh": "Bónus 超市 · 劳加维格", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1425, "lng": -21.9291 }, "navigation": { "query": "Bónus Laugavegur, Reykjavík" }, "note": "雷市补给" },
+    { "id": "hallgrimskirkja", "name": "Hallgrímskirkja", "nameZh": "哈尔格里姆教堂", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1417, "lng": -21.9266 }, "navigation": { "query": "Hallgrímskirkja, Reykjavík" }, "note": "登顶看全城" },
+    { "id": "tjornin", "name": "Tjörnin", "nameZh": "特约宁湖", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1436, "lng": -21.9426 }, "navigation": { "query": "Tjörnin pond, Reykjavík" }, "note": "市中心湖" },
+    { "id": "old_harbour", "name": "Old Harbour", "nameZh": "旧港", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1514, "lng": -21.9381 }, "navigation": { "query": "Old Harbour, Reykjavík" }, "note": "午餐观景" },
+    { "id": "perlan", "name": "Perlan", "nameZh": "珍珠楼", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1295, "lng": -21.9195 }, "navigation": { "query": "Perlan, Reykjavík" }, "note": "观景台" },
+    { "id": "thingvellir", "name": "Þingvellir National Park", "nameZh": "辛格维利尔国家公园", "cityOrArea": "黄金圈", "geo": { "lat": 64.2552, "lng": -21.1219 }, "navigation": { "query": "Þingvellir National Park" }, "note": "板块裂缝" },
+    { "id": "bruarfoss", "name": "Brúarfoss", "nameZh": "布鲁阿福斯瀑布", "cityOrArea": "黄金圈", "geo": { "lat": 64.2705, "lng": -20.5142 }, "navigation": { "query": "Brúarfoss waterfall, Grímsnes, Iceland" }, "note": "蓝绿色小瀑布" },
+    { "id": "strokkur", "name": "Strokkur Geysir", "nameZh": "史托克间歇泉", "cityOrArea": "黄金圈", "geo": { "lat": 64.3126, "lng": -20.3089 }, "navigation": { "query": "Strokkur, Haukadalur, Iceland" }, "note": "每几分钟喷发" },
+    { "id": "gullfoss", "name": "Gullfoss", "nameZh": "黄金瀑布", "cityOrArea": "黄金圈", "geo": { "lat": 64.3272, "lng": -20.1220 }, "navigation": { "query": "Gullfoss waterfall, Iceland" }, "note": "双层大瀑布" },
+    { "id": "fridheimar", "name": "Friðheimar", "nameZh": "弗里德海默番茄农场", "cityOrArea": "黄金圈", "geo": { "lat": 64.2602, "lng": -20.3872 }, "navigation": { "query": "Friðheimar tomato farm, Iceland" }, "note": "温室午餐" },
+    { "id": "bonus_selfoss", "name": "Bónus Selfoss", "nameZh": "Bónus 超市 · 塞尔福斯", "cityOrArea": "塞尔福斯", "geo": { "lat": 63.9354, "lng": -21.0061 }, "navigation": { "query": "Bónus Tryggvabraut, Selfoss" }, "note": "黄金圈补给" },
+    { "id": "seljalandsfoss", "name": "Seljalandsfoss", "nameZh": "塞里雅兰瀑布", "cityOrArea": "南岸", "geo": { "lat": 63.6156, "lng": -19.9893 }, "navigation": { "query": "Seljalandsfoss, Iceland" }, "note": "可绕到瀑布后" },
+    { "id": "skogafoss", "name": "Skógafoss", "nameZh": "斯科加瀑布", "cityOrArea": "南岸", "geo": { "lat": 63.5321, "lng": -19.4482 }, "navigation": { "query": "Skógafoss, Iceland" }, "note": "登台阶看全景" },
+    { "id": "solheimajokull", "name": "Sólheimajökull", "nameZh": "索尔黑马冰川", "cityOrArea": "南岸", "geo": { "lat": 63.5360, "lng": -19.3208 }, "navigation": { "query": "Sólheimajökull glacier, Iceland" }, "note": "冰川远眺" },
+    { "id": "dyrholaey", "name": "Dyrhólaey", "nameZh": "迪霍拉里海岬", "cityOrArea": "南岸", "geo": { "lat": 63.3990, "lng": -19.1202 }, "navigation": { "query": "Dyrhólaey, Iceland" }, "note": "火山岩拱门" },
+    { "id": "reynisfjara", "name": "Reynisfjara Black Beach", "nameZh": "雷尼斯黑沙滩", "cityOrArea": "维克", "geo": { "lat": 63.4043, "lng": -19.1107 }, "navigation": { "query": "Reynisfjara, Iceland" }, "note": "玄武岩柱 · 警惕巨浪" },
+    { "id": "vikurkirkja", "name": "Víkurkirkja", "nameZh": "维克教堂", "cityOrArea": "维克", "geo": { "lat": 63.4191, "lng": -18.9965 }, "navigation": { "query": "Vík church, Vík í Mýrdal" }, "note": "小镇全景" },
+    { "id": "fjadrargljufur", "name": "Fjaðrárgljúfur", "nameZh": "羽毛峡谷", "cityOrArea": "南岸东部", "geo": { "lat": 63.7719, "lng": -17.0118 }, "navigation": { "query": "Fjaðrárgljúfur canyon, Iceland" }, "note": "冬季部分栈道关闭" },
+    { "id": "eldhraun", "name": "Eldhraun Lava Field", "nameZh": "埃尔德熔岩原", "cityOrArea": "南岸东部", "geo": { "lat": 63.8830, "lng": -17.6120 }, "navigation": { "query": "Eldhraun lava field, Iceland" }, "note": "苔原熔岩" },
+    { "id": "jokulsarlon", "name": "Jökulsárlón Glacier Lagoon", "nameZh": "杰古沙龙冰河湖", "cityOrArea": "瓦特纳冰川", "geo": { "lat": 64.0475, "lng": -16.1799 }, "navigation": { "query": "Jökulsárlón glacier lagoon" }, "note": "浮冰 · 蓝冰洞集合点" },
+    { "id": "stokksnes", "name": "Stokksnes", "nameZh": "斯托克斯角", "cityOrArea": "东部", "geo": { "lat": 64.2544, "lng": -15.0283 }, "navigation": { "query": "Stokksnes, Iceland" }, "note": "黑沙滩与山" },
+    { "id": "bonus_hofn", "name": "Bónus Höfn", "nameZh": "Bónus 超市 · 霍芬", "cityOrArea": "霍芬", "geo": { "lat": 64.2530, "lng": -15.2130 }, "navigation": { "query": "Bónus Hafnarbraut, Höfn í Hornafirði" }, "note": "龙虾汤食材" },
+    { "id": "sky_lagoon", "name": "Sky Lagoon", "nameZh": "Sky Lagoon 温泉", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.0786, "lng": -21.9762 }, "navigation": { "query": "Sky Lagoon, Iceland" }, "note": "无边温泉" },
+    { "id": "budakirkja", "name": "Búðakirkja", "nameZh": "布迪尔黑教堂", "cityOrArea": "斯奈山", "geo": { "lat": 64.8720, "lng": -23.7082 }, "navigation": { "query": "Búðakirkja, Búðir, Snæfellsnes" }, "note": "黑教堂" },
+    { "id": "arnarstapi", "name": "Arnarstapi", "nameZh": "阿尔纳斯塔皮", "cityOrArea": "斯奈山", "geo": { "lat": 64.7677, "lng": -23.7741 }, "navigation": { "query": "Arnarstapi, Iceland" }, "note": "海岸栈道" },
+    { "id": "djupalonssandur", "name": "Djúpalónssandur", "nameZh": "迪帕隆黑沙滩", "cityOrArea": "斯奈山", "geo": { "lat": 64.7478, "lng": -23.7991 }, "navigation": { "query": "Djúpalónssandur, Iceland" }, "note": "力量测试石" },
+    { "id": "ingjaldsholskirkja", "name": "Ingjaldshólskirkja", "nameZh": "英格亚尔德斯教堂", "cityOrArea": "斯奈山", "geo": { "lat": 64.8970, "lng": -23.7900 }, "navigation": { "query": "Ingjaldshólskirkja, Iceland" }, "note": "红色小教堂" },
+    { "id": "kirkjufellsfoss", "name": "Kirkjufellsfoss", "nameZh": "教会山瀑布", "cityOrArea": "斯奈山", "geo": { "lat": 64.9286, "lng": -23.2495 }, "navigation": { "query": "Kirkjufellsfoss, Kirkjufell" }, "note": "草帽山机位" },
+    { "id": "stykkisholmur", "name": "Stykkishólmur", "nameZh": "斯蒂基斯霍尔米", "cityOrArea": "斯奈山北部", "geo": { "lat": 65.0781, "lng": -22.7576 }, "navigation": { "query": "Stykkishólmur harbour, Iceland" }, "note": "港口小镇" },
+    { "id": "bonus_borgarnes", "name": "Bónus Borgarnes", "nameZh": "Bónus 超市 · 博尔加内斯", "cityOrArea": "博尔加内斯", "geo": { "lat": 64.5415, "lng": -21.9204 }, "navigation": { "query": "Bónus Borgarnes" }, "note": "回程补给" },
+    { "id": "n1_hringbraut", "name": "N1 Hringbraut", "nameZh": "N1 加油站 · 环城路", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1515, "lng": -21.9370 }, "navigation": { "query": "N1 Hringbraut, Reykjavík" }, "note": "还车前加油" },
+    { "id": "elding", "name": "Elding Whale Watching", "nameZh": "观鲸码头（Elding）", "cityOrArea": "雷克雅未克旧港", "geo": { "lat": 64.1510, "lng": -21.9326 }, "navigation": { "query": "Elding Whale Watching, Reykjavík" }, "note": "观鲸船码头" }
+  ],
+  "restaurants": [],
+  "mapLinks": {
+    "navigationPolicy": { "noNavigationTypes": [], "selfNavigationTypes": [] }
+  },
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "real",
+    "region": { "id": "is", "label": "冰岛", "center": { "lat": 64.85, "lng": -19.2 }, "zoom": 6 },
+    "disclaimer": "路线为驾车导航示意（OSRM 路径），实际驾驶请使用当日导航 App；导航点坐标已按地理坐标标注。",
+    "places": [
+      { "id": "kef_airport", "name": "Keflavík International Airport", "nameZh": "凯夫拉维克国际机场", "cityOrArea": "凯夫拉维克", "geo": { "lat": 63.9850, "lng": -22.6246 }, "navigation": { "query": "Keflavík International Airport, Iceland" }, "note": "抵达取车" },
+      { "id": "costco", "name": "Costco Wholesale Iceland", "nameZh": "开市客（冰岛店）", "cityOrArea": "加尔达拜尔（Garðabær）", "geo": { "lat": 64.0742, "lng": -21.9120 }, "navigation": { "query": "Costco Wholesale Iceland, Kauptún 3, Garðabær" }, "note": "DAY1 采购" },
+      { "id": "bonus_laugavegur", "name": "Bónus Laugavegur", "nameZh": "Bónus 超市 · 劳加维格", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1425, "lng": -21.9291 }, "navigation": { "query": "Bónus Laugavegur, Reykjavík" }, "note": "雷市补给" },
+      { "id": "hallgrimskirkja", "name": "Hallgrímskirkja", "nameZh": "哈尔格里姆教堂", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1417, "lng": -21.9266 }, "navigation": { "query": "Hallgrímskirkja, Reykjavík" }, "note": "登顶看全城" },
+      { "id": "tjornin", "name": "Tjörnin", "nameZh": "特约宁湖", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1436, "lng": -21.9426 }, "navigation": { "query": "Tjörnin pond, Reykjavík" }, "note": "市中心湖" },
+      { "id": "old_harbour", "name": "Old Harbour", "nameZh": "旧港", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1514, "lng": -21.9381 }, "navigation": { "query": "Old Harbour, Reykjavík" }, "note": "午餐观景" },
+      { "id": "perlan", "name": "Perlan", "nameZh": "珍珠楼", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1295, "lng": -21.9195 }, "navigation": { "query": "Perlan, Reykjavík" }, "note": "观景台" },
+      { "id": "thingvellir", "name": "Þingvellir National Park", "nameZh": "辛格维利尔国家公园", "cityOrArea": "黄金圈", "geo": { "lat": 64.2552, "lng": -21.1219 }, "navigation": { "query": "Þingvellir National Park" }, "note": "板块裂缝" },
+      { "id": "bruarfoss", "name": "Brúarfoss", "nameZh": "布鲁阿福斯瀑布", "cityOrArea": "黄金圈", "geo": { "lat": 64.2705, "lng": -20.5142 }, "navigation": { "query": "Brúarfoss waterfall, Grímsnes, Iceland" }, "note": "蓝绿色小瀑布" },
+      { "id": "strokkur", "name": "Strokkur Geysir", "nameZh": "史托克间歇泉", "cityOrArea": "黄金圈", "geo": { "lat": 64.3126, "lng": -20.3089 }, "navigation": { "query": "Strokkur, Haukadalur, Iceland" }, "note": "每几分钟喷发" },
+      { "id": "gullfoss", "name": "Gullfoss", "nameZh": "黄金瀑布", "cityOrArea": "黄金圈", "geo": { "lat": 64.3272, "lng": -20.1220 }, "navigation": { "query": "Gullfoss waterfall, Iceland" }, "note": "双层大瀑布" },
+      { "id": "fridheimar", "name": "Friðheimar", "nameZh": "弗里德海默番茄农场", "cityOrArea": "黄金圈", "geo": { "lat": 64.2602, "lng": -20.3872 }, "navigation": { "query": "Friðheimar tomato farm, Iceland" }, "note": "温室午餐" },
+      { "id": "bonus_selfoss", "name": "Bónus Selfoss", "nameZh": "Bónus 超市 · 塞尔福斯", "cityOrArea": "塞尔福斯", "geo": { "lat": 63.9354, "lng": -21.0061 }, "navigation": { "query": "Bónus Tryggvabraut, Selfoss" }, "note": "黄金圈补给" },
+      { "id": "seljalandsfoss", "name": "Seljalandsfoss", "nameZh": "塞里雅兰瀑布", "cityOrArea": "南岸", "geo": { "lat": 63.6156, "lng": -19.9893 }, "navigation": { "query": "Seljalandsfoss, Iceland" }, "note": "可绕到瀑布后" },
+      { "id": "skogafoss", "name": "Skógafoss", "nameZh": "斯科加瀑布", "cityOrArea": "南岸", "geo": { "lat": 63.5321, "lng": -19.4482 }, "navigation": { "query": "Skógafoss, Iceland" }, "note": "登台阶看全景" },
+      { "id": "solheimajokull", "name": "Sólheimajökull", "nameZh": "索尔黑马冰川", "cityOrArea": "南岸", "geo": { "lat": 63.5360, "lng": -19.3208 }, "navigation": { "query": "Sólheimajökull glacier, Iceland" }, "note": "冰川远眺" },
+      { "id": "dyrholaey", "name": "Dyrhólaey", "nameZh": "迪霍拉里海岬", "cityOrArea": "南岸", "geo": { "lat": 63.3990, "lng": -19.1202 }, "navigation": { "query": "Dyrhólaey, Iceland" }, "note": "火山岩拱门" },
+      { "id": "reynisfjara", "name": "Reynisfjara Black Beach", "nameZh": "雷尼斯黑沙滩", "cityOrArea": "维克", "geo": { "lat": 63.4043, "lng": -19.1107 }, "navigation": { "query": "Reynisfjara, Iceland" }, "note": "玄武岩柱 · 警惕巨浪" },
+      { "id": "vikurkirkja", "name": "Víkurkirkja", "nameZh": "维克教堂", "cityOrArea": "维克", "geo": { "lat": 63.4191, "lng": -18.9965 }, "navigation": { "query": "Vík church, Vík í Mýrdal" }, "note": "小镇全景" },
+      { "id": "fjadrargljufur", "name": "Fjaðrárgljúfur", "nameZh": "羽毛峡谷", "cityOrArea": "南岸东部", "geo": { "lat": 63.7719, "lng": -17.0118 }, "navigation": { "query": "Fjaðrárgljúfur canyon, Iceland" }, "note": "冬季部分栈道关闭" },
+      { "id": "eldhraun", "name": "Eldhraun Lava Field", "nameZh": "埃尔德熔岩原", "cityOrArea": "南岸东部", "geo": { "lat": 63.8830, "lng": -17.6120 }, "navigation": { "query": "Eldhraun lava field, Iceland" }, "note": "苔原熔岩" },
+      { "id": "jokulsarlon", "name": "Jökulsárlón Glacier Lagoon", "nameZh": "杰古沙龙冰河湖", "cityOrArea": "瓦特纳冰川", "geo": { "lat": 64.0475, "lng": -16.1799 }, "navigation": { "query": "Jökulsárlón glacier lagoon" }, "note": "浮冰 · 蓝冰洞集合点" },
+      { "id": "stokksnes", "name": "Stokksnes", "nameZh": "斯托克斯角", "cityOrArea": "东部", "geo": { "lat": 64.2544, "lng": -15.0283 }, "navigation": { "query": "Stokksnes, Iceland" }, "note": "黑沙滩与山" },
+      { "id": "bonus_hofn", "name": "Bónus Höfn", "nameZh": "Bónus 超市 · 霍芬", "cityOrArea": "霍芬", "geo": { "lat": 64.2530, "lng": -15.2130 }, "navigation": { "query": "Bónus Hafnarbraut, Höfn í Hornafirði" }, "note": "龙虾汤食材" },
+      { "id": "sky_lagoon", "name": "Sky Lagoon", "nameZh": "Sky Lagoon 温泉", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.0786, "lng": -21.9762 }, "navigation": { "query": "Sky Lagoon, Iceland" }, "note": "无边温泉" },
+      { "id": "budakirkja", "name": "Búðakirkja", "nameZh": "布迪尔黑教堂", "cityOrArea": "斯奈山", "geo": { "lat": 64.8720, "lng": -23.7082 }, "navigation": { "query": "Búðakirkja, Búðir, Snæfellsnes" }, "note": "黑教堂" },
+      { "id": "arnarstapi", "name": "Arnarstapi", "nameZh": "阿尔纳斯塔皮", "cityOrArea": "斯奈山", "geo": { "lat": 64.7677, "lng": -23.7741 }, "navigation": { "query": "Arnarstapi, Iceland" }, "note": "海岸栈道" },
+      { "id": "djupalonssandur", "name": "Djúpalónssandur", "nameZh": "迪帕隆黑沙滩", "cityOrArea": "斯奈山", "geo": { "lat": 64.7478, "lng": -23.7991 }, "navigation": { "query": "Djúpalónssandur, Iceland" }, "note": "力量测试石" },
+      { "id": "ingjaldsholskirkja", "name": "Ingjaldshólskirkja", "nameZh": "英格亚尔德斯教堂", "cityOrArea": "斯奈山", "geo": { "lat": 64.8970, "lng": -23.7900 }, "navigation": { "query": "Ingjaldshólskirkja, Iceland" }, "note": "红色小教堂" },
+      { "id": "kirkjufellsfoss", "name": "Kirkjufellsfoss", "nameZh": "教会山瀑布", "cityOrArea": "斯奈山", "geo": { "lat": 64.9286, "lng": -23.2495 }, "navigation": { "query": "Kirkjufellsfoss, Kirkjufell" }, "note": "草帽山机位" },
+      { "id": "stykkisholmur", "name": "Stykkishólmur", "nameZh": "斯蒂基斯霍尔米", "cityOrArea": "斯奈山北部", "geo": { "lat": 65.0781, "lng": -22.7576 }, "navigation": { "query": "Stykkishólmur harbour, Iceland" }, "note": "港口小镇" },
+      { "id": "bonus_borgarnes", "name": "Bónus Borgarnes", "nameZh": "Bónus 超市 · 博尔加内斯", "cityOrArea": "博尔加内斯", "geo": { "lat": 64.5415, "lng": -21.9204 }, "navigation": { "query": "Bónus Borgarnes" }, "note": "回程补给" },
+      { "id": "n1_hringbraut", "name": "N1 Hringbraut", "nameZh": "N1 加油站 · 环城路", "cityOrArea": "雷克雅未克", "geo": { "lat": 64.1515, "lng": -21.9370 }, "navigation": { "query": "N1 Hringbraut, Reykjavík" }, "note": "还车前加油" },
+      { "id": "elding", "name": "Elding Whale Watching", "nameZh": "观鲸码头（Elding）", "cityOrArea": "雷克雅未克旧港", "geo": { "lat": 64.1510, "lng": -21.9326 }, "navigation": { "query": "Elding Whale Watching, Reykjavík" }, "note": "观鲸船码头" }
+    ],
+    "routes": [],
+    "dailyRoutes": [
+      { "day": 1, "placeIds": ["kef_airport", "costco", "bonus_laugavegur"] },
+      { "day": 3, "placeIds": ["bonus_laugavegur", "thingvellir", "bruarfoss", "strokkur", "gullfoss", "fridheimar", "bonus_selfoss", "bonus_laugavegur"] },
+      { "day": 5, "placeIds": ["bonus_laugavegur", "seljalandsfoss", "skogafoss", "solheimajokull", "dyrholaey", "reynisfjara", "vikurkirkja"] },
+      { "day": 6, "placeIds": ["vikurkirkja", "fjadrargljufur", "eldhraun", "jokulsarlon", "stokksnes", "bonus_hofn"] },
+      { "day": 7, "placeIds": ["bonus_hofn", "jokulsarlon", "bonus_laugavegur"] },
+      { "day": 9, "placeIds": ["bonus_laugavegur", "budakirkja", "arnarstapi", "djupalonssandur", "ingjaldsholskirkja", "kirkjufellsfoss", "stykkisholmur", "bonus_borgarnes", "bonus_laugavegur"] }
+    ]
+  }
+}
